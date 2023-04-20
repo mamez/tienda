@@ -1,0 +1,23 @@
+[
+    {
+        "id":"C001",
+        "especificacion":"ArmAdAPC ECOi3 Core i3/Ram 4GB/DiscoDuro 1TB/Pantalla 20 Pulgadas",
+        "precio":1600000,
+        "descuento":10,
+        "imagen":"images/computador/C001.jpg"
+    },
+    {
+      "id": "C002",
+      "especificacion": "ArmadaPC CPMXR322 AMD RYZEN 3 2200G/RAM 4GB/Disco Duro 1000GB/19.5 CPMX",
+      "precio": 1800000,
+      "descuento": 15,
+      "imagen": "images/computador/C002.jpg"
+    },
+    {
+      "id": "C003",
+      "especificacion": "Acer Nitro 50 Intel Core i5-10400F 6-Core 10th Gen/ GeForce GTX 1650/512GB NVMe M 2 SSD/8GB DDR4/Intel WiFi 6, teclado y Mouse/ N50-610-UR14",
+      "precio": 3799900,
+      "descuento": 5,
+      "imagen": "images/computador/C003.jpg"
+    }
+]

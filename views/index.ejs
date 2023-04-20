@@ -1,0 +1,215 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <%- include('./fracment/head'); %>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- header -->
+      <%- include('./fracment/nav'); %>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <span>Computadoras y Portátiles</span>
+                                 <h1>Computadoras</h1>
+                                 <p>Computadoras nuevas, garantizadas al mejor precio, envios a todo el país, cedes Bogotá y Medellin.</p>
+                                 <a href="product?type=computo">Comprar </a> <a href="contact">Contactanos </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure><img src="images/pct.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <span>Computadoras y Portátiles</span>
+                                 <h1>Accesorios</h1>
+                                 <p>Suministramos toda clase de accesorios tecnológicos ideales para tu entretenimiento estudio o trabajo.</p>
+                                 <a href="accesorios">Comprar </a> <a href="contact">Contactanos </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure><img src="images/pct.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <span>Computadoras y Portátiles</span>
+                                 <h1>Portatiles</h1>
+                                 <p>Computadores portátiles ideales para tu entretenimiento estudio o trabajo </p>
+                                 <a href="/product?type=laptop">Comprar </a> <a href="contact">Contactanos </a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure><img src="images/pct.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- three_box -->
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/thr.png" alt="#"/></i>
+                     <h3>Computadores</h3>
+                     <p>Si estas buscando computadores de escritorio somos tu mejor opción en nuestra tienda online encuentras el mejor equipo para cubrir tus necesidades. contamos con las mejores marcas  HP, Acer, Lenovo, Dell.
+                        decídete ya a comprar el Computador perfecto al mejor precio la mejor calidad y garantía directa!
+                       .</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/thr1.png" alt="#"/></i>
+                     <h3>Portatiles</h3>
+                     <p>¿Buscas portátiles ligeros y cómodos para llevar contigo?, En nuestra tienda encuentras una gran selección de portátiles para cualquier uso donde puedas elegir el mejor portátil
+                        Tenemos los últimos modelos de computadores portátiles de marcas lideres como. Macbook Pro, HP, Acer, MSI, Lenovo, Dell, Huawei, Asus. </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/thr2.png" alt="#"/></i>
+                     <h3>Tablet</h3>
+                     <p>Si estas buscando un dispositivo practico y comodo te recomendamos nuestras tablets, las cuales son comadas y con gran capacidad de almacenamiento. contamos con las mejores marcas HP, Acer, Lenovo, Dell y Asus. ofreciendo la garantía directamente con la marca adquirida. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- three_box -->
+      <!-- products -->
+       <%- include('./fracment/product'); %>
+      <!-- end products -->
+      <!-- laptop  section -->
+      <% if(promocion.hasOwnProperty("mensaje")){%>
+      <div class="laptop">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <p><%=promocion.mensaje%></p>
+                     <h2><%=promocion.descuento%></h2>
+                     <a class="read_more" href="<%=promocion.url%>">Comprar</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="laptop_box">
+                     <figure><img src="images/pc.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <%} %>
+      </div>
+      <!-- end laptop  section -->
+      <% if(experiencias.length > 0) {%>
+      <!-- customer -->
+      <div class="customer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Experiencias de usuarios</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide customer_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                       <% experiencias.forEach(function(experiencia, index) { %>
+                        <div class="carousel-item  <%=index==1?'active':''%>">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-9 offset-md-3">
+                                       <div class="test_box">
+                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <h4><%=experiencia.usuario%></h4>
+                                          <p><%=experiencia.opinion%></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       <% }); %>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <% } %>
+      <!-- end customer -->
+
+      <!--  contact -->
+      <%- include('./fracment/contact'); %>
+      <!-- end contact -->
+      <!--  footer -->
+      <%- include('./fracment/footer'); %>
+   </body>
+</html>
+

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "A001",
+    "especificacion": "SADES Wand Gaming/Sonido Envolvente 7.1/USB",
+    "precio": 189000,
+    "descuento": 10,
+    "imagen": "images/productos/auriculares/A001.jpg"
+  },
+  {
+    "id": "A002",
+    "especificacion": "HyperX Cloud Stinger Core 7.1/Gaming/Headset",
+    "precio": 219000,
+    "descuento": 15,
+    "imagen": "images/productos/auriculares/A002.jpg"
+  },
+  {
+    "id": "A003",
+    "especificacion": "Redragon H260 RGB HYLAS Stereo/Plug 3.5 mm/Cable",
+    "precio": 1499900,
+    "descuento": 5,
+    "imagen": "images/productos/auriculares/A003.jpg"
+  }
+]

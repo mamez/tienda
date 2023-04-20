@@ -1,0 +1,23 @@
+[
+  {
+    "id": "D001",
+    "especificacion": "ADATA SSD 480GB Ultimate SU630/SATA/NAND 3D QLC",
+    "precio": 259000,
+    "descuento": 10,
+    "imagen": "images/productos/hdd/D001.jpg"
+  },
+  {
+    "id": "D002",
+    "especificacion": "ArmadaPC CPMXR322 AMD RYZEN 3 2200G/RAM 4GB/Disco Duro 1000GB/19.5 CPMX",
+    "precio": 299000,
+    "descuento": 15,
+    "imagen": "images/productos/hdd/D002.jpg"
+  },
+  {
+    "id": "D003",
+    "especificacion": "Kingston 500 GB SSD NVMe NV1/PCIe/M.2 2280/Gen 3",
+    "precio": 3499900,
+    "descuento": 5,
+    "imagen": "images/productos/hdd/D003.jpg"
+  }
+]

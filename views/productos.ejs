@@ -1,0 +1,76 @@
+  <% 
+    let CopPeso = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'COP',
+});
+ function calcularValor(valor, descuentoPorc){
+     const descuento = (descuentoPorc*valor)/100;
+     return valor-descuento;
+ }
+  %>
+  <head>
+      <%- include('./fracment/head'); %>
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_posituong">
+     <%- include('./fracment/nav'); %>
+      <!-- products -->
+      <% if (productos.length > 0) { %>
+          <div  class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2><%=titulo%></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_products">
+                     <div class="row">
+                        <% 
+                           let valorTotal = 0;
+                           productos.forEach(producto => { %>
+                          <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="<%=producto.imagen%>" alt="#"/></figure>
+                           <% if(grupo != ''){ %>
+                              <h3 class="item_store"  data-group="<%=grupo%>" data-id="<%=producto.id%>" >Añadir al carrito</h3>
+                           <% } %>
+                           </div>
+                           <h4><%=producto.especificacion%></h4>
+                            <% if(grupo != ''){ %>
+                           <h4>Antes:<span class="antes"> $ <%=CopPeso.format(producto.precio)%></span></h4>
+                           <h4>Ahora:<span class="ahora"> $ <%=CopPeso.format(calcularValor(producto.precio,producto.descuento))%></span></h4>
+                            <% }else{ 
+                               valorTotal+= calcularValor(producto.precio,producto.descuento)*producto.cont;
+                              %>
+                              <h4>Unidades:<span class="ahora"> <%=producto.cont%></span>  
+                                 <a  href="/store/delete/<%=producto.id%>" class="deleteItem"><i class="fa fa-trash"></i></a>
+                                 </h4>
+                              <h4>Valor:<span class="ahora"> $ <%=CopPeso.format(calcularValor(producto.precio,producto.descuento)*producto.cont)%></span></h4>
+                           <% } %>
+                        </div>
+                         <% }) %>
+                     </div>
+                      <% if(grupo == ''){ %>
+                     <div class="row">
+                       <h4>Valor total :<span class="ahora"> $ <%=CopPeso.format(valorTotal)%></span></h4>
+                     </div>
+                     <div class="row">
+                      <a href="/payment" class="read_more2">Pagar</a>
+                       <a href="/store/abort"  class="cancelar">Cancelar</a>
+                     </div>
+                      <% }%>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <% } %>
+      <!-- end products -->
+      <!--  footer -->
+       <%- include('./fracment/footer'); %>
+   </body>
+</html>i

@@ -1,0 +1,66 @@
+{
+  "pagina":{
+    "nombre":"CLA"
+  },
+  "produtTitle":{
+    "computo": "Nuestros computadores",
+    "laptop": "Nuestros portatiles",
+    "teclado": "Teclados",
+    "mause":"Mause",
+    "hdd":"Discos Duros",
+    "ram":"Memorias Ram",
+    "webcam":"Camaras Web",
+    "auriculares":"Auriculares"
+  },
+  "promocion": {
+    "mensaje": "Computadores y portátiles",
+    "descuento": "Hasta con un 40% de descuento !",
+    "url": "/product?type=oferta"
+  },
+  "experiencias": [
+    {
+      "usuario": "Sandra Quevedo",
+      "opinion": "Tienen equipos muy económicos, los cuales se ajustan ala economía de cada cliente, sus accesorias son excelente por lo cual te indican cuales tu mejor opción en cuanto a tus necesidades"
+    },
+    {
+      "usuario": "Miguel Mendez",
+      "opinion": "El soporte que entrega esta empresa es verdaderamente bueno, yo realice una compra de un portátil hace mas de 6 meces, a los 15 días de comprado el portátil este no encendía. me comunique con la empresa y enviaron a un centro de soporte donde me dieron uno nuevo"
+    },
+    {
+      "usuario": "Paola Mejia",
+      "opinion": "El tiempo de entrega es excelente, yo personal mente vivo en la costa norte de colombia y realice una compra a los dos días me llamo la compañía de mensajería para recoger la entrega."
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Teclados",
+      "imagen": "images/product1.png",
+      "url": "/product?type=teclado"
+    },
+    {
+      "nombre": "Mause",
+      "imagen": "images/product2.png",
+      "url": "/product?type=mause"
+    },
+    {
+      "nombre": "Discos Duros",
+      "imagen": "images/product6.png",
+      "url": "/product?type=hdd"
+    },
+    {
+      "nombre": "Memorias",
+      "imagen": "images/product7.png",
+      "url": "/product?type=ram"
+    },
+    {
+      "nombre": "Auriculares",
+      "imagen": "images/product8.png",
+      "url": "/product?type=auriculares"
+    },
+    {
+      "nombre": "Camaras",
+      "imagen": "images/product3.png",
+      "url": "/product?type=webcam"
+    }
+  ]
+}

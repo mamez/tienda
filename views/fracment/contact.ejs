@@ -1,0 +1,57 @@
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Contactanos</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <form id="request" class="main_form" onsubmit="return contactar()">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <input class="contactus" placeholder="Nombre" type="type" name="Name">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Coreo Electrónico" type="type" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Telefono" type="type" name="Phone Number">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="textarea" placeholder="Mensaje" type="type"
+                                Message="Name">Mensaje </textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="send_btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="JavaScript">
+   function contactar(){
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+    toastr["success"]("Hemos recibido tu mensaje, un asesor de nosotros se contactara con usted en breve", "Notificacion")
+      return false;
+   }
+</script>

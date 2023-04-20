@@ -1,0 +1,23 @@
+[
+  {
+    "id": "W001",
+    "especificacion": "A4Tech PK-910H l Full HD 1080p Cámaras para pc",
+    "precio": 180000,
+    "descuento": 10,
+    "imagen": "images/productos/webcam/W001.jpg"
+  },
+  {
+    "id": "W002",
+    "especificacion": "A4Tech PK-910P HD 720p Cámara para pc",
+    "precio": 109000,
+    "descuento": 15,
+    "imagen": "images/productos/webcam/W002.jpg"
+  },
+  {
+    "id": "W003",
+    "especificacion": "Microsoft Lifecam HD-3000 T3H-00011 | HD 720 Panorámica",
+    "precio": 1690000,
+    "descuento": 5,
+    "imagen": "images/productos/webcam/W003.jpg"
+  }
+]

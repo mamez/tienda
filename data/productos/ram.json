@@ -1,0 +1,23 @@
+[
+  {
+    "id": "R001",
+    "especificacion": "Adata 8 GB RAM DDR4 3200 SO-DIMM PC4-25600/Módulo Premier-AD4S32008G22-SGN",
+    "precio": 280000,
+    "descuento": 10,
+    "imagen": "images/productos/ram/R001.jpg"
+  },
+  {
+    "id": "R002",
+    "especificacion": "ADATA 16GB RAM DDR4 PC 3200/SO-DIMM 260 pin",
+    "precio": 359000,
+    "descuento": 15,
+    "imagen": "images/productos/ram/R002.jpg"
+  },
+  {
+    "id": "R003",
+    "especificacion": "Corsair Vengance RGB 8 GB DR4 3200Mhz DIMM/1 x 16",
+    "precio": 289000,
+    "descuento": 5,
+    "imagen": "images/productos/ram/R003.jpg"
+  }
+]

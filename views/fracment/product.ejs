@@ -1,0 +1,39 @@
+ <% if (productos.length > 0) { %>
+          <div  class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Nuestros productos</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_products">
+                     <div class="row">
+                        <% productos.forEach(producto => { %>
+                          <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="<%=producto.imagen%>" alt="#"/></figure>
+                              <h3 class="product" data-url="<%=producto.url%>"><%=producto.nombre%></h3>
+                           </div>
+                        </div>
+                         <% }) %>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <% } %>
+
+      <script>
+         const products = document.querySelectorAll('.product');
+         products.forEach(product => {
+            product.addEventListener('click', function handleClick(event) {
+               window.location.href = event.target.getAttribute("data-url");
+            });
+         });
+        
+      </script>

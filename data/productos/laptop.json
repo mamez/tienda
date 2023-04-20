@@ -1,0 +1,23 @@
+[
+  {
+    "id": "P001",
+    "especificacion": "Lenovo Ideapad 3-14ALC6 AMD Ryzen 3-5300U/ RAM 8 GB/ SSD 256GB/ 14″Pulgadas/ Full HD 1920 x 1080/ Color Azul",
+    "precio": 1200000,
+    "descuento": 10,
+    "imagen": "images/portatil/P001.jpg"
+  },
+  {
+    "id": "P002",
+    "especificacion": "Asus X515j Core i3-1005G1 3.4 GHz/4GB RAM/256 GB SSD/15.6″ Pulgadas FHD (1920X1080)/Linux/Plateado/X515j-BR2165",
+    "precio": 1500000,
+    "descuento": 15,
+    "imagen": "images/portatil/P002.jpg"
+  },
+  {
+    "id": "P003",
+    "especificacion": "Acer Nitro 50 Intel Core i5-10400F 6-Core 10th Gen/ GeForce GTX 1650/512GB NVMe M 2 SSD/8GB DDR4/Intel WiFi 6, teclado y Mouse/ N50-610-UR14",
+    "precio": 3799900,
+    "descuento": 5,
+    "imagen": "images/portatil/P003.jpg"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "M001",
+    "especificacion": "RHyperX Pulsefire Haste/Raton 16000 DPI/cable/color-negro-HMSH1-A-BK/G",
+    "precio": 179000,
+    "descuento": 10,
+    "imagen": "images/productos/mause/M001.jpg"
+  },
+  {
+    "id": "M002",
+    "especificacion": "Redragon Ranger LITE M910-KS/ 500-8000 DPI/ USB 2.4G Wireless",
+    "precio": 200000,
+    "descuento": 15,
+    "imagen": "images/productos/mause/M001.jpg"
+  },
+  {
+    "id": "M003",
+    "especificacion": "Redragon Ranger Basic M910-K/ 500-8000 DPI",
+    "precio": 120000,
+    "descuento": 10,
+    "imagen": "images/productos/mause/M003.jpg"
+  }
+]

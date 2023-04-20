@@ -1,0 +1,23 @@
+[
+     {
+       "id": "T001",
+       "especificacion": "Redragon Devarajas K556/ 104 Teclas/ Brown Switches/ RGB Backlit/ base metalica/ Mecánico",
+       "precio": 100000,
+       "descuento": 10,
+       "imagen": "images/productos/teclados/T001.jpg"
+     },
+      {
+        "id": "T002",
+        "especificacion": "Genius Scorpion K215 Retroiluminado RGB teclas de membrana",
+        "precio": 98000,
+        "descuento": 15,
+        "imagen": "images/productos/teclados/T001.jpg"
+      },
+       {
+         "id": "T003",
+         "especificacion": "VSG VG KM981 Mintaka/Mechanical /Blanco Switch Café/VG KM981",
+         "precio": 220000,
+         "descuento": 10,
+         "imagen": "images/productos/teclados/T003.jpg"
+       }
+]
