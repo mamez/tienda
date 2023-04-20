@@ -1,4 +1,4 @@
-# tienda
+# Tienda Web
 
 ## Intalacion del dependendecias
  npm install
