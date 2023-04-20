@@ -1,7 +1,7 @@
 # tienda
 
 ## Intalacion del dependendecias
-### npm install
+ npm install
 
 ## Ejecutar proyecto
-### npm run start
+npm run start
