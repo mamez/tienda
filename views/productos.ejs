@@ -41,7 +41,8 @@
                            </div>
                            <h4><%=producto.especificacion%></h4>
                             <% if(grupo != ''){ %>
-                           <h4>Antes:<span class="antes"> $ <%=CopPeso.format(producto.precio)%></span></h4>
+                           <h4 style="display:<%=producto.descuento==0?'none':'block'%>" >Antes:<span class="antes"> $ <%=CopPeso.format(producto.precio)%></span></h4>
+                           
                            <h4>Ahora:<span class="ahora"> $ <%=CopPeso.format(calcularValor(producto.precio,producto.descuento))%></span></h4>
                             <% }else{ 
                                valorTotal+= calcularValor(producto.precio,producto.descuento)*producto.cont;

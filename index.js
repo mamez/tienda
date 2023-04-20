@@ -63,7 +63,9 @@ app.get('/product', async (req, res) => {
         productos: productos
     });
 });
-
+/**
+ * Guardar producto al carrito de compra
+ */
 app.post('/store', async (req, res) => {
     const id = req.body.id;
     const producType = req.body.group;
@@ -93,6 +95,9 @@ app.post('/store', async (req, res) => {
     res.status(201).json(product);
 });
 
+/**
+ * Lista todos los productos del carrito de compra
+ */
 app.get('/store', async (req, res) => {
     res.render('productos', {
         titulo: "Productos a comprar",
@@ -101,6 +106,9 @@ app.get('/store', async (req, res) => {
     });
 });
 
+/**
+ * Retorna el numero de productos del carrito
+ */
 app.get('/store/count', async (req, res) => {
     let cont=0;
     req.session.productos?.forEach(element => {
@@ -109,11 +117,17 @@ app.get('/store/count', async (req, res) => {
     res.status(201).json({total:cont});
 });
 
+/**
+ * Salir de la compra
+ */
 app.get('/store/abort', async (req, res) => {
     req.session.productos=[];
     res.redirect('/');
 });
 
+/**
+ * Elimina un producto del carrito
+ */
 app.get('/store/delete/:id', async (req, res) => {
     const id = req.params.id;
     
@@ -132,7 +146,9 @@ app.get('/store/delete/:id', async (req, res) => {
 });
 
 
-
+/**
+ * Pasarela de pago
+ */
 app.get('/payment', async (req, res) => {
     req.session.productos = [];
     res.render('pasarela/pagos');
