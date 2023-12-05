@@ -1,12 +1,12 @@
 {
   "pagina":{
-    "nombre":"CLA"
+    "nombre":"CATHARD"
   },
   "produtTitle":{
     "computo": "Nuestros computadores",
     "laptop": "Nuestros portatiles",
     "teclado": "Teclados",
-    "mause":"Mause",
+    "mause":"Mouse",
     "hdd":"Discos Duros",
     "ram":"Memorias Ram",
     "webcam":"Camaras Web",
@@ -38,7 +38,7 @@
       "url": "/product?type=teclado"
     },
     {
-      "nombre": "Mause",
+      "nombre": "Mouse",
       "imagen": "images/product2.png",
       "url": "/product?type=mause"
     },

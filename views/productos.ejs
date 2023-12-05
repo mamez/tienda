@@ -36,7 +36,9 @@
                            <div class="product_box">
                               <figure><img src="<%=producto.imagen%>" alt="#"/></figure>
                            <% if(grupo != ''){ %>
-                              <h3 class="item_store"  data-group="<%=grupo%>" data-id="<%=producto.id%>" >Añadir al carrito</h3>
+                              <button type="button" class="btn btn-sm btn-dark"> <a   data-group="<%=grupo%>" data-id="<%=producto.id%>">Añadir al carrito </a> </button>
+                              <button type="button" class="btn btn-sm btn-dark" > <a href="/detalle/<%=producto.id%>" >Detalle </a> </button>
+                              
                            <% } %>
                            </div>
                            <h4><%=producto.especificacion%></h4>
@@ -61,7 +63,7 @@
                      </div>
                      <div class="row">
                       <a href="/payment" class="read_more2">Pagar</a>
-                       <a href="/store/abort"  class="cancelar">Cancelar</a>
+                       <a href="/store/abort"  class="read_more2" >Cancelar</a>
                      </div>
                       <% }%>
                   </div>
@@ -74,4 +76,4 @@
       <!--  footer -->
        <%- include('./fracment/footer'); %>
    </body>
-</html>i
+</html>

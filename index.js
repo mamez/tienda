@@ -63,6 +63,12 @@ app.get('/product', async (req, res) => {
         productos: productos
     });
 });
+
+
+app.get('/detalle/id', async(req,res)=> {
+    let product;
+    product= await.bd.getData
+})
 /**
  * Guardar producto al carrito de compra
  */
@@ -157,4 +163,4 @@ app.get('/payment', async (req, res) => {
 
 
 
-app.listen(3000);
+app.listen(3001);
