@@ -37,7 +37,7 @@
                               <figure><img src="<%=producto.imagen%>" alt="#"/></figure>
                            <% if(grupo != ''){ %>
                               <button type="button" class="btn btn-sm btn-dark"> <a   data-group="<%=grupo%>" data-id="<%=producto.id%>">Añadir al carrito </a> </button>
-                              <button type="button" class="btn btn-sm btn-dark" > <a href="/detalle/<%=producto.id%>" >Detalle </a> </button>
+                              <button type="button" class="btn btn-sm btn-dark" > <a href="/<%=grupo%>?id=<%=producto.id%>" >Detalle </a> </button>
                               
                            <% } %>
                            </div>

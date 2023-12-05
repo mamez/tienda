@@ -65,10 +65,6 @@ app.get('/product', async (req, res) => {
 });
 
 
-app.get('/detalle/id', async(req,res)=> {
-    let product;
-    product= await.bd.getData
-})
 /**
  * Guardar producto al carrito de compra
  */
@@ -161,6 +157,20 @@ app.get('/payment', async (req, res) => {
 });
 
 
-
+app.get('/:type', async(req,res)=> {
+    let id= req.query.id;
+    let type=req.params.type;
+    productos = await bd.getData("productos/"+type+".json");
+    productos.forEach((producto)=>{
+       if(producto.id === id){
+         res.render('detalle',{
+             img:producto.imagen,
+             precio:producto.precio,
+             especificacion:producto.especificacion,
+             cantidad: producto.hasOwnProperty('cantidad')? producto.cantidad: "20"
+         });
+       }
+    })
+ })
 
 app.listen(3001);

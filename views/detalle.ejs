@@ -11,7 +11,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <img class="card-img" src="" alt="Card image cap">
+                            <img class="card-img" src="<%=img%>" alt="Card image cap">
                         </div>
                       </div>
                 </div>
@@ -20,9 +20,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Detalle de producto</h5>
                                 <p class="card-text"></p>
-                                <p class="card-text"><small class="text-muted">Descripción:</small></p>
-                                <p class="card-text"><small class="text-muted">Precio:</small></p>
-                                <p class="card-text"><small class="text-muted">Cantidad:</small></p>
+                                <p class="card-text"><small class="text-muted">Descripción: <%=especificacion%></small></p>
+                                <p class="card-text"><small class="text-muted">Precio: <%=precio%></small></p>
+                                <p class="card-text"><small class="text-muted">Cantidad: <%=cantidad%></small></p>
                         </div>
                       </div>
                 </div>
@@ -30,6 +30,6 @@
         </div>
     </div>
         
-
+    <%- include('./fracment/footer'); %>
 </body>
 </html>
